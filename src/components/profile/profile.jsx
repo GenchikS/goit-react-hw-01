@@ -1,24 +1,26 @@
+import "../profile/profile.css"
+
 export default function Profile({ name, tag, location, image, stats }) {
     return (
-    <div>
-        <div>
-          <img src={image} />
-          <p>{name}</p>
-          <p>@{tag}</p>
-          <p>{location}</p>
+    <div className="container">
+        <div >
+          <img className="imgContainer" src={image} />
+          <p className="titleName">{name}</p>
+          <p className="textNameTag">@{tag}</p>
+          <p className="textNameLocation">{location}</p>
       </div>
-      <ul>
-        <li>
-          <span>Followers: </span>
-          <span>{stats.followers}</span>
+      <ul className="listContainer">
+        <li className="list">
+          <span className="spanTitle">Followers</span>
+          <span className="spanText">{stats.followers}</span>
           </li>
-        <li>
-          <span>Views</span>
-          <span>{stats.views}</span>
+        <li className="list">
+          <span className="spanTitle">Views</span>
+          <span className="spanText">{stats.views}</span>
           </li>
-        <li>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
+        <li className="list">
+          <span className="spanTitle">Likes</span>
+          <span className="spanText">{stats.likes}</span>
           </li>
       </ul>
     </div>
