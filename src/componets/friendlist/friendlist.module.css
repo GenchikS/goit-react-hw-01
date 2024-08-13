@@ -1,0 +1,42 @@
+p {
+    margin: 0;
+}
+.containerList{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+    padding: 0;
+    margin-left: 50px;
+}
+
+.list{
+    width: 80px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border: 3px solid #111;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.name{
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.green{
+    font-weight: 400;
+    font-size: 18px;
+    color: green;
+}
+
+.red{
+    font-weight: 400;
+    font-size: 18px;
+    color: red;
+}

@@ -1,0 +1,22 @@
+import Profile from "./componets/profile/profile";
+import userData from "./componets/profile/userData.json";
+import FriendList from "./componets/friendlist/friendlist";
+import friends from "./componets/friendlist/friends.json";
+import TransactionHistory from "./componets/transaction/transactionhistory";
+import transactions from "./componets/transaction/transactions.json";
+
+export default function App() {
+  return (
+    <div>
+      <Profile
+        image={userData.avatar}
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        stats={userData.stats}
+      />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
+    </div>
+  );
+}
